@@ -773,6 +773,7 @@ class SceneImporter():
         ob.matrix_world.col[2] = z.resized(4)
 
         cam = ob.data
+        cam.sensor_fit = 'VERTICAL'
         aspect_ratio = camera.aspect_ratio
         fov = camera.fov
         if aspect_ratio == False:
